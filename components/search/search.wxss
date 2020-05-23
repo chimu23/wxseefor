@@ -1,0 +1,12 @@
+.btn{
+  height: 8vh;
+  border: 1rpx solid #cccccc;
+  border-radius: 35rpx;
+  background-color: #fff;
+}
+.btn navigator{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

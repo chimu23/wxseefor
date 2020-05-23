@@ -1,0 +1,22 @@
+<view>
+    <view class="search">
+        <view class="search_input">
+            <input placeholder-class="inputPlace" type="text" value="{{inputVal}}" placeholder="请输入内容"  bindinput="changeInput"></input>
+        </view>
+        <view class="search_btn">
+          <button size="mini" bind:tap="handleCancel" hidden="{{!showBtn}}">取消</button>
+        </view>
+    </view>
+    <view class="main">
+        <navigator url="/pages/detail/index?wd={{item.vod_name}}" class="main_item" wx:for="{{searchData}}" wx:key="vod_id">
+            <view class="item_image">
+               <image mode="scaleToFill" src="{{item.vod_pic}}"> </image>
+            </view>
+            <view class="item_text">
+                <view >片名：<text style="color:red">{{item.vod_name}}</text> </view>
+                  <view >剧集：{{item.vod_continu}}</view>
+                    <view >类型：{{item.list_name}}</view>                  
+            </view>
+        </navigator>
+    </view>
+</view> 

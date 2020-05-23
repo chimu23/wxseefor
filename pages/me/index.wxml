@@ -1,0 +1,21 @@
+
+
+<view class="image_box">
+	<view class="box_image">
+		<image mode="widthFix" src="../../icons/title.jpg"></image>
+	</view>
+	<view class="box_text">Muiilce</view>
+</view>
+<view class="main_box">
+
+	<navigator class="history_box" url="/pages/history/index">
+		<text>观看历史</text> <text class="iconfont icon-icon-test"></text>
+	</navigator>
+
+
+	<navigator class="collect_box" url="/pages/collection/index">
+		<text>我的看单</text> <text class="iconfont icon-icon-test"></text>
+
+	</navigator>
+
+</view>

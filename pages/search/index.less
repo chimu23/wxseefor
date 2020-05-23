@@ -1,0 +1,57 @@
+page {
+  background-color: #f5f7f9;
+}
+view {
+  .search {
+    display: flex;
+    height: 120rpx;
+    color: #fff;
+    .search_input {
+      flex: 1;
+      box-sizing: border-box;
+      border: 1rpx solid #ccc;
+      border-radius: 55rpx;
+      position: relative;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      padding-left: 15rpx;
+      height: 90rpx;
+      color: black;
+    }
+    .search_btn {
+      position: absolute;
+      height: 91rpx;
+      right: -3rpx;
+      button {
+        height: 90rpx;
+        display: flex;
+        align-items: center;
+        border: 1rpx solid #ccc;
+      }
+    }
+  }
+
+  .main {
+    .main_item {
+      display: flex;
+      height: 250rpx;
+      padding: 10rpx 20rpx;
+      .item_image {
+        width: 25%;
+        image {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .item_text {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 30rpx;
+      }
+    }
+  }
+}

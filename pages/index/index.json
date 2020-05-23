@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "search":"../../components/search/search",
+    "photos":"../../components/showPhotos/showPhotos"
+    
+  },
+  "navigationBarTitleText": "首页"
+}

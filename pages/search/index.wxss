@@ -1,0 +1,58 @@
+page {
+  background-color: #f5f7f9;
+}
+view .search {
+  display: flex;
+  height: 120rpx;
+  color: #fff;
+}
+view .search .search_input {
+  flex: 1;
+  box-sizing: border-box;
+  border: 1rpx solid #ccc;
+  border-radius: 55rpx;
+  position: relative;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 15rpx;
+  height: 90rpx;
+  color: #e33e33;
+
+}
+.inputPlace{
+  color: #e33e33;
+  font-size: 40rpx;
+  font-weight: 500;
+}
+view .search .search_btn {
+  position: absolute;
+  height: 91rpx;
+  right: -3rpx;
+}
+view .search .search_btn button {
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  border: 1rpx solid #ccc;
+}
+view .main .main_item {
+  display: flex;
+  height: 250rpx;
+  padding: 10rpx 20rpx;
+}
+view .main .main_item .item_image {
+  width: 25%;
+}
+view .main .main_item .item_image image {
+  width: 100%;
+  height: 100%;
+}
+view .main .main_item .item_text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 30rpx;
+}

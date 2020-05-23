@@ -1,0 +1,4 @@
+<view>
+  <search></search>
+<photos collectionList="{{rencentList}}"></photos>
+</view>

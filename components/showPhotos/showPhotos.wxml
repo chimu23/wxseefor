@@ -1,0 +1,11 @@
+<view class="main">
+	<navigator bindlongpress="longTap"  url="/pages/detail/index?wd={{item.vod_name}}" class="main_item" wx:for="{{collectionList}}" wx:key="vod_id" data-wd="{{item.vod_name}}">
+		<view class="item_image">
+			<image mode="scaleToFill" src="{{item.vod_pic}}"></image>
+			<view class="item_con">{{item.vod_continu}}</view>
+		</view>
+		<view class="item_text">
+			<text>{{item.vod_name}}</text>
+		</view>
+	</navigator>
+</view>

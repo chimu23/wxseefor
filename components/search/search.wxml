@@ -1,0 +1,3 @@
+<view class="btn">
+<navigator url="/pages/search/index">搜索</navigator> 
+</view>

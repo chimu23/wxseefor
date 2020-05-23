@@ -1,0 +1,4 @@
+page{
+  font-size: 36rpx;
+}
+@import './utils/iconfont.wxss'
