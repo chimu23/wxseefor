@@ -1,1 +1,26 @@
-<video src="{{url}}" controls show-casting-button ></video>
+<video id="myVideo" src="{{url}}" controls show-casting-button></video>
+<view class="controls">
+	<view class="speed">
+		<view class="text">播放控制：</view>
+		<view class="btns">
+			<!-- <button bindtap="handleRate" data-rate="1" type="warn" plain size="mini">1.0</button>
+      <button bindtap="handleRate" data-rate="1.5" type="warn" plain size="mini">1.5</button>
+      <button bindtap="handleRate" data-rate="2" type="warn" plain size="mini">2.0</button> -->
+      <view class="control_speed">
+			<text class="iconfont icon-chouti-xuanji1" bindtap="handleJump" data-jump="-1"></text>
+      <text class="iconfont icon-chouti-xuanji" bindtap="handleJump" data-jump="1"></text>
+      </view>
+			<text class="iconfont icon-beisubofang1"  bindtap="handleRate" data-rate="1"></text>
+			<text class="iconfont icon-beisubofang" bindtap="handleRate" data-rate="1.5"></text>
+			<text class="iconfont icon-beisubofang2" bindtap="handleRate" data-rate="2"></text>
+		</view>
+	</view>
+	<!-- <view class="url">
+		<view class="text">播放控制：</view>
+		<view class="btns">
+			<button bindtap="handleJump" data-jump="-1" type="warn" plain size="mini">上集</button>
+      <button bindtap="handleJump" data-jump="1" type="warn" plain size="mini">下集</button>
+		
+		</view>
+	</view> -->
+</view>

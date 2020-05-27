@@ -30,20 +30,20 @@ Page({
     let collect = wx.getStorageSync("collect") || [];
     let result = [];
     let collectionList=[]
-    collect.forEach(async (element) => {
-      result.push(request({ query: "?wd=" + element.name }));
-    });
+    // collect.forEach(async (element) => {
+    //   result.push(request({ query: "?wd=" + element.vod_name }));
+    // });
 
-    Promise.all(result).then((res) => {
-     res.forEach((i)=>{
-      collectionList.push(i.data[0])
-     })
+    // Promise.all(result).then((res) => {
+    //  res.forEach((i)=>{
+    //   collectionList.push(i.data[0])
+    //  })
      
      this.setData({
-      collectionList
+      collectionList:collect
      })
    
-    });
+    // });
 
   },
 

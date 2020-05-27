@@ -1,7 +1,9 @@
-<block wx:if="{{isHis}}">
-<view class="handleBtn" bindtap="handleBtn" hidden="{{!isHis}}">
-<button size="mini" plain>清空历史记录</button>
-</view>
-<photos  collectionList="{{collectionList}}" type="hisUrl" bindmyevent="onMyEvent"></photos>
+<block wx:if="{{!isHis}}">
+	暂无内容
 </block>
-<text wx:else>暂无内容</text>
+<view wx:else>
+	<view class="handleBtn" bindtap="handleBtn" hidden="{{!isHis}}">
+		<button size="mini" plain>清空历史记录</button>
+	</view>
+	<photos collectionList="{{collectionList}}" type="hisUrl" bindmyevent="onMyEvent"></photos>
+</view>

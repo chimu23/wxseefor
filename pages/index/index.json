@@ -1,8 +1,9 @@
 {
   "usingComponents": {
     "search":"../../components/search/search",
-    "photos":"../../components/showPhotos/showPhotos"
+    "photos":"../../components/showPhotos/showPhotos",
+    "nav":"../../components/nav/nav"
     
   },
-  "navigationBarTitleText": "首页"
+  "navigationStyle":"custom"
 }

@@ -1,0 +1,35 @@
+page {
+  position: relative;
+  padding-top: 120rpx;
+}
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  margin-bottom: 20rpx;
+  background-image: linear-gradient(to right, #1e3851, #3c8a88);
+  display: flex;
+  padding-top: 35rpx;
+  align-items: center;
+  height: 120rpx;
+  background-color: #f5f7f9;
+  text-align: center;
+  border-bottom: 1rpx solid #9a76ff;
+}
+.nav navigator {
+  width: 35vw;
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: #fff;
+  border: 1rpx solid #fff;
+  border-radius: 26rpx;
+  position: relative;
+  color: #a7b9bf;
+}
+.nav navigator icon {
+  position: absolute;
+  right: 10rpx;
+  top: 50%;
+  transform: translateY(-26%);
+}

@@ -1,0 +1,7 @@
+<view class="nav" >
+
+
+<navigator url="/pages/search/index">搜索<icon type="search" class="iconfont icon-shoucang"></icon> </navigator> 
+
+
+</view>

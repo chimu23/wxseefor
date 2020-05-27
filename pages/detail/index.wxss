@@ -11,7 +11,7 @@ page {
   overflow: hidden;
 }
 .top .image image {
-  width: 100%;
+  width: 95%;
   height: 100%;
   border-radius: 15rpx;
 }
@@ -19,13 +19,14 @@ page {
   flex: 1;
   padding: 20rpx;
   color: #818181;
+  position: relative;
 }
 .top .text_box .iscollect {
   color: #ffac2d;
 }
 .top .text_box view {
-  padding: 15rpx 0;
   font-size: 27rpx;
+  padding-bottom: 15rpx;
 }
 .top .text_box .title {
   font-weight: 600;
@@ -33,7 +34,13 @@ page {
   color: #191919;
 }
 .top .text_box .collect {
-  height: 90rpx;
+  position: absolute;
+  bottom: 0;
+  margin-top: 9rpx;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  height: 110rpx;
   background-color: #eaedef;
   border: 1rpx solid #eaedef;
   border-radius: 15rpx;
@@ -43,8 +50,16 @@ page {
   font-weight: 700;
 }
 .top .text_box .collect text {
+  width: 10vw;
   font-size: 38rpx;
   color: #ffac2d;
+  padding: 0  23rpx;
+  border-right: 1rpx solid #ccc;
+}
+.top .text_box .collect .handlePlay {
+  width: 260rpx;
+  font-size: 38rpx;
+  font-weight: 700;
 }
 .main {
   background-color: #ffffff;
@@ -73,4 +88,7 @@ page {
   width: 173rpx !important;
   margin: 8rpx;
   color: #9999ff;
+}
+.footer .playing {
+  color: red;
 }

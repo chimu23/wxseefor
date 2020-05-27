@@ -6,18 +6,20 @@
         <view class="title">{{listData.vod_name}}</view>
         <view class="all">{{listData.all}}</view>
         <view class="updata">{{listData.vod_continu}}</view>
-          <view class="collect {{isCollection?'iscollect':''}}" bind:tap="collect">
-              {{isCollection?'已加入':'加入看单'}}   <text class="iconfont {{isCollection?'icon-shoucang1':'icon-shoucang'}} "></text>
-              
-              </view>
+        <view class="collect {{isCollection?'iscollect':''}}" >
+            <!-- {{isCollection?'已加入':'加入看单'}} -->
+            <text class="iconfont {{isCollection?'icon-shoucang1':'icon-shoucang'}} " bind:tap="collect"></text>
+            <view class="handlePlay" bind:tap="handlePlay">马上追剧</view>
+        </view>
     </view>
 </view>
 <view class="main">
-    <view class="title">简介</view>
+    <!-- <view class="title">简介</view> -->
     <view class='content {{isShow?"":"hide"}}'>{{listData.vod_content}}</view>
-    <view class="btn" bind:tap="showContent" >{{isShow?'收起':'展开'}}</view>
-
+    <view class="btn" bind:tap="showContent">{{isShow?'收起':'展开'}}</view>
 </view>
 <view class="footer">
-    <button size="mini"  plain wx:for="{{playUrl}}" wx:key="name" bind:tap="handleBtn" data-index="{{item.url}}">{{item.name}}</button>
+    <button class="{{index ==lastIndex?'playing':''}}" size="mini" plain wx:for="{{playUrl}}" wx:key="name" data-index="{{index}}" bind:tap="handleBtn" data-url="{{item.url}}">
+        {{item.name}}
+    </button>
 </view>

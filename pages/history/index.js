@@ -8,30 +8,29 @@ Page({
    */
   data: {
     collectionList: [],
-    isHis:false
+    isHis:true
   },
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    let collect = wx.getStorageSync("hisUrl") || [];
+    let hisUrl = wx.getStorageSync("hisUrl") || [];
     let result = [];
-    let collectionList = []
-    collect.forEach(async (element) => {
-      result.push(request({
-        query: "?wd=" + element.name
-      }));
-    });
-    if(result.length==0) return
-    Promise.all(result).then((res) => {
-      res.forEach((i) => {
-        collectionList.push(i.data[0])
-      })
+    // collect.forEach(async (element) => {
+    //   result.push(request({
+    //     query: "?wd=" + element.vod_name
+    //   }));
+    // });
+    // if(result.length==0) return
+    // Promise.all(result).then((res) => {
+    //   res.forEach((i) => {
+    //     collectionList.push(i.data[0])
+    //   })
       this.setData({
-        collectionList,
+        collectionList:hisUrl,
         isHis:true
       })
-    });
+    // });
   },
   handleBtn(){
     wx.setStorageSync('hisUrl', [])

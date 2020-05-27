@@ -1,4 +1,36 @@
-<view>
-  <search></search>
+<nav></nav>
+<!-- <view>
 <photos collectionList="{{rencentList}}"></photos>
+</view> -->
+<view class="swpier">
+	<swiper autoplay indicator-dots>
+		<swiper-item>
+			<navigator url="/pages/detail/index?wd=喜欢你">
+				<image mode="scaleToFill" src="https://s1.ax1x.com/2020/05/27/tEVtQP.png"></image>
+			</navigator>
+		</swiper-item>
+		<swiper-item>
+            <navigator url="/pages/detail/index?wd=幸福"><image mode="scaleToFill" src="https://s1.ax1x.com/2020/05/27/tEVNsf.png"></image></navigator>
+        </swiper-item>
+        <swiper-item>
+            <navigator url="/pages/detail/index?wd=极限挑战第六季"><image mode="scaleToFill" src="https://s1.ax1x.com/2020/05/27/tEVprT.png"></image></navigator>
+        </swiper-item>
+	</swiper>
+</view>
+<view class="category_list">
+	<view class="category_item" wx:for="{{Allmsg}}" wx:key="this">
+		<view class="item_title">{{item[0].list_name}}</view>
+		<view class="item_detail">
+			<scroll-view scroll-x="true">
+				<view class="detail" wx:for="{{item}}" wx:for-item="item2" wx:key="vod_id">
+					<navigator url="/pages/detail/index?wd={{item2.vod_name}}">
+						<view class="detail_img">
+							<image src="{{item2.vod_pic}}"></image>
+						</view>
+						<view class="detail_text">{{item2.vod_name}}</view>
+					</navigator>
+				</view>
+			</scroll-view>
+		</view>
+	</view>
 </view>
